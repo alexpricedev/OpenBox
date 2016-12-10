@@ -1,6 +1,11 @@
-import Box from './box';
-import { Left, Right } from './either';
-import fromNullable from './fromNullable';
+import {
+  Box,
+  Left,
+  Right,
+} from './containers';
+import {
+  fromNullable,
+} from './helpers';
 
 export {
   Box,

@@ -8,10 +8,16 @@ SimpleFJS
 This project is a fun way for me to practice my knowledge of functional
 programming in JS.
 
-## Types
+## Containers
 
 - [x] Box
-- [ ] Either
+- [x] Either
+
+
+## Helpers
+
+- [x] fromNullable
+- [ ] tryCatch
 
 
 ### Test
