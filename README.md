@@ -10,8 +10,8 @@ programming in JS.
 
 ## Types
 
-[x] Box
-[] Either
+- [x] Box
+- [ ] Either
 
 
 ### Test
