@@ -1,26 +1,27 @@
-/*
- * Fuctional Programming Learning
+/**
+ * Box is a generic container for helping with
+ * composition.
  */
-
-// Box is a generic container
 const Box = x => ({
-  /*
-   * Map allows us to apply functions without
-   * state. As it returns a Box it allows
-   * chaining (composition).
+
+  /**
+   * Map allows us to apply functions without state.
+   * @param {Function} f - A function to apply to `x`
+   * @return {Box} Box(x) - A Box instance containing `x`
    */
   map: f => Box(f(x)),
 
-  /*
-   * Fold is a way to release the value from
-   * the Box. This cannot be chained as it
-   * doesn't return a Box.
+  /**
+   * Fold is a way to release `x` from the `Box`.
+   * Cannot be chained onto as it doesn't return a `Box`.
+   * @param {Function} f - A function to apply to `x`
+   * @return {*} x
    */
   fold: f => f(x),
 
-  /*
-   * Inspect is a trick to nicely format any Box
-   * instances when logged to the console.
+  /**
+   * Called by `console.log` and nicely formats our `Box`.
+   * @return {String}
    */
   inspect: () => `Box(${x})`,
 });
