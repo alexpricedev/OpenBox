@@ -25,24 +25,4 @@ const Box = x => ({
   inspect: () => `Box(${x})`,
 });
 
-/*
- * This is a good example of how using
- * Box is useful. It shows the different uses
- * of `.map()`.
- */
-
-/*
- *const nextCharForNumberString = str =>
- *  Box(str)
- *    .map(s => s.trim()) // method calls
- *    .map(r => parseInt(r)) // function operators
- *    .map(i => i + 1) // operators
- *    .map(i => String.fromCharCode(i)) // qualified class function
- *
- *    // returns raw value
- *   .fold(s => s.toLowerCase());
- *
- *nextCharForNumberString(' 64 '); // 'a'
- */
-
 export default Box;
