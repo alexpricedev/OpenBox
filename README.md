@@ -6,7 +6,10 @@ OpenBox
 > OpenBox - A collection of simple funcational tools for everyday programming use
 
 This project is currently a fun way for me to practice my knowledge of
-functional programming in JS.
+functional programming in JS, testing and documentation writing.
+
+It is based off the material from Brian Lonsdorf's excellent tutorial
+series on [egghead.io](https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript),
 
 ## Containers
 
@@ -39,6 +42,7 @@ yarn run test
 
 
 ### Thanks to
+- Brian Lonsdorf ([@drboolean](https://twitter.com/drboolean))
 - [ES6 Library Minimal](https://www.npmjs.org/package/es6-library-minimal) starter kit
 
 ## License
