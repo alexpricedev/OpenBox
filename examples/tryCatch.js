@@ -1,6 +1,4 @@
 const OpenBox = require('../lib');
-const Left = OpenBox.Left;
-const Right = OpenBox.Right;
 const fromNullable = OpenBox.fromNullable;
 const tryCatch = OpenBox.tryCatch;
 
