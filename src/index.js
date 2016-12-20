@@ -5,6 +5,7 @@ import {
 } from './containers';
 import {
   fromNullable,
+  tryCatch,
 } from './helpers';
 
 export {
@@ -12,4 +13,5 @@ export {
   Left,
   Right,
   fromNullable,
+  tryCatch,
 };
