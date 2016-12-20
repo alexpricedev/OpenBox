@@ -3,7 +3,7 @@ const Left = OpenBox.Left;
 const Right = OpenBox.Right;
 
 // ================ Example 1 =========================
-// This shows a simple exmaple of using Left and Right
+// This shows a simple example of using Left and Right
 // to handle possible errors inside the function, while
 // allowing the handling of the errors to be chosen
 // by the calling code.

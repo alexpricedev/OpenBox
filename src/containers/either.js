@@ -13,16 +13,24 @@ const Right = x => ({
   /**
    * Map allows us to apply functions without state.
    * @param {Function} f - A function to apply to `x`
-   * @return {Right} Right(x) - A Box instance containing `x`
+   * @return {Right} Right(f(x)) - A Box instance containing `f(x)`
    */
   map: f => Right(f(x)),
 
   /**
-   * Fold is a way to release `x` from the `Right`.
+   * Chain allows us to apply functions without Box-ing the value.
+   * This is useful when working with nested Boxes.
+   * @param {Function} f - A function to apply to `x`
+   * @return {*} f(x) - The result of applying `f` on `x`
+   */
+  chain: f => f(x),
+
+  /**
+   * Fold is a way to release our value from the `Right`.
    * In `Right`, we apply the second param (the right one).
    * @param {Function} f - A function which gets ignored
    * @param {Function} g - The function to apply to `x`
-   * @return {*} x
+   * @return {*} g(x)
    */
   fold: (f, g) => g(x),
 
@@ -46,6 +54,13 @@ const Left = x => ({
    * @return {Left} Left(x) - A Left instance containing `x`
    */
   map: f => Left(x),
+
+  /**
+   * In a Left, chain doesn't apply our function.
+   * @param {Function} f - A function to apply to `x`
+   * @return {Left} Left(x) - A Left instance containing `x`
+   */
+  chain: f => Left(x),
 
   /**
    * Fold is a way to release `x` from the `Left`.
