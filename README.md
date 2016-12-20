@@ -17,7 +17,7 @@ functional programming in JS.
 ## Helpers
 
 - [x] fromNullable
-- [ ] tryCatch
+- [x] tryCatch
 
 
 ### Build
