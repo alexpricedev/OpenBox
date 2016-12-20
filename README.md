@@ -9,12 +9,15 @@ This project is currently a fun way for me to practice my knowledge of
 functional programming in JS, testing and documentation writing.
 
 It is based off the material from Brian Lonsdorf's excellent tutorial
-series on [egghead.io](https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript),
+series on [egghead.io](https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript).
 
-## Containers
+## Containers (types)
 
 - [x] Box
 - [x] Either
+- [x] Sum
+- [x] All
+- [ ] Any
 
 
 ## Helpers

@@ -2,6 +2,8 @@ import {
   Box,
   Left,
   Right,
+  Sum,
+  All,
 } from './containers';
 import {
   fromNullable,
@@ -12,6 +14,9 @@ export {
   Box,
   Left,
   Right,
+  Sum,
+  All,
+
   fromNullable,
   tryCatch,
 };
