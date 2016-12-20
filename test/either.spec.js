@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { Left, Right } from '../lib';
 
-describe('While importing Left and Right from SimpleFJS', function() {
+describe('While importing Left and Right from OpenBox', function() {
 
   describe('when I create a Left containing a 1', function() {
     it('I should get a Left instance containing a 1', () => {

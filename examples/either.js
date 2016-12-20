@@ -1,6 +1,6 @@
-const FJS = require('../lib');
-const Left = FJS.Left;
-const Right = FJS.Right;
+const OpenBox = require('../lib');
+const Left = OpenBox.Left;
+const Right = OpenBox.Right;
 
 // ================ Example 1 =========================
 // This shows a simple exmaple of using Left and Right

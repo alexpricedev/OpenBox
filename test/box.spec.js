@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { Box } from '../lib';
 
-describe('While importing Box from SimpleFJS', function() {
+describe('While importing Box from OpenBox', function() {
 
   describe('when I create a Box containing a 1', function() {
     it('I should get a Box instance containing a 1', () => {

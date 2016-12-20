@@ -1,5 +1,5 @@
-const FJS = require('../lib');
-const Box = FJS.Box;
+const OpenBox = require('../lib');
+const Box = OpenBox.Box;
 
 // ================ Example 1 =======================
 // This is a good example of how using Box is useful.

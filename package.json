@@ -1,11 +1,11 @@
 {
-  "name": "SimpleFJS",
+  "name": "OpenBox",
   "version": "0.0.1",
-  "description": "Simple Functional Javascript",
+  "description": "Simple Functional Javascript Tools",
   "main": "./index.js",
   "scripts": {
-    "prepublish": "npm run build-all",
-    "preversion": "npm run build-all && npm run unit",
+    "prepublish": "yarn run build-all",
+    "preversion": "yarn run build-all && yarn run unit",
     "version": "git add .",
     "postversion": "git push && git push --tags",
     "build": "gulp build",
@@ -15,11 +15,11 @@
     "build-all": "gulp",
     "unit": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
     "unit-watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js",
-    "test": "npm run unit-watch"
+    "test": "yarn run unit-watch"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/alexpriceonline/OpenBox"
   },
   "keywords": [
     "functional",
@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/alexpriceonline/OpenBox/issues"
   },
   "files": [
     "LICENSE",
@@ -69,7 +69,7 @@
     "webpack-node-externals": "^0.4.1"
   },
   "library": {
-    "name": "SimpleFJS",
+    "name": "OpenBox",
     "entry": "index.js",
     "dist-node": "index.js",
     "dist-web": "index.web.js",
