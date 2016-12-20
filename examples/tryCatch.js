@@ -48,13 +48,11 @@ const findYear = date => tryCatch(() => date.getFullYear());
  */
 const formatDate = date => findDay(date)
                            .fold(
-                              e => 'Invalid day',
+                              e => 'Invalid date',
                               d => findMonth(date)
-                                   .fold(
-                                     e => 'Invalid month',
+                                   .chain(
                                      m => findYear(date)
-                                          .fold(
-                                            e => 'Invalid year',
+                                          .chain(
                                             y => `${d} ${m} ${y}`
                                           )
                                    )
