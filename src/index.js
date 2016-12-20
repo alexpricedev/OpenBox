@@ -4,6 +4,7 @@ import {
   Right,
   Sum,
   All,
+  Any,
 } from './containers';
 import {
   fromNullable,
@@ -16,6 +17,7 @@ export {
   Right,
   Sum,
   All,
+  Any,
 
   fromNullable,
   tryCatch,

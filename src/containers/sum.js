@@ -26,4 +26,10 @@ const Sum = x => ({
   inspect: () => `Sum(${x})`,
 });
 
+/**
+ * The empty method is our identity value which makes Sum
+ * a monoid.
+ */
+Sum.empty = () => Sum(0);
+
 export default Sum;

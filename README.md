@@ -17,7 +17,8 @@ series on [egghead.io](https://egghead.io/courses/professor-frisby-introduces-co
 - [x] Either
 - [x] Sum
 - [x] All
-- [ ] Any
+- [x] Any
+- [ ] First
 
 
 ## Helpers

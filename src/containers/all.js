@@ -1,5 +1,5 @@
 /**
- * All is a semi-group container for booleans.
+ * All is a semi-group (and monoid) container for booleans.
  */
 const All = x => ({
 
@@ -15,7 +15,7 @@ const All = x => ({
 
   /**
    * Fold is a way to release `x` from the `All`.
-   * @return {Number} x
+  * @return {Boolean} x
    */
   fold: () => x,
 
@@ -25,5 +25,11 @@ const All = x => ({
    */
   inspect: () => `All(${x})`,
 });
+
+/**
+ * The empty method is our identity value which makes All
+ * a monoid.
+ */
+All.empty = () => All(true);
 
 export default All;

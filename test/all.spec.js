@@ -33,6 +33,14 @@ describe('While importing All from OpenBox', function() {
         .fold()
       ).to.be.true;
     });
+
+    it('I should be able to concat with an identity and not change the value', () => {
+      expect(
+        All(true)
+        .concat(All.empty())
+        .fold()
+      ).to.be.true;
+    });
   });
 
   describe('when I create an All containing a false', function() {
@@ -57,6 +65,14 @@ describe('While importing All from OpenBox', function() {
         .concat(All(false))
         .inspect()
       ).to.be.equal('All(false)');
+    });
+
+    it('I should be able to concat with an identity and not change the value', () => {
+      expect(
+        All(false)
+        .concat(All.empty())
+        .fold()
+      ).to.be.false;
     });
   });
 
