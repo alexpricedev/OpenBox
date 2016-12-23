@@ -55,6 +55,19 @@ describe('While importing Left and Right from OpenBox', function() {
         )
       ).to.be.equal(2);
     });
+
+    it('I should be able to use the chain method to apply functions on Right without boxing backup the value.', () => {
+      expect(
+        Right(1)
+        .map(
+          x => x + 1
+        )
+        .chain(
+          x => Right(x + 1)
+        )
+        .inspect()
+      ).to.be.equal('Right(3)');
+    });
   });
 
 });

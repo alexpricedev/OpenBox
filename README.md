@@ -14,11 +14,24 @@ series on [egghead.io](https://egghead.io/courses/professor-frisby-introduces-co
 ## Containers (types)
 
 - [x] Box
+  - [ ] of method
+  - [ ] chain method
 - [x] Either
-- [x] Sum
-- [x] All
-- [x] Any
+  - [ ] of method
+- [ ] List
 - [ ] First
+- [x] Sum
+  - [ ] of method
+  - [ ] chain method
+- [ ] Product
+- [ ] Max
+- [ ] Min
+- [x] All
+  - [ ] of method
+  - [ ] chain method
+- [x] Any
+  - [ ] of method
+  - [ ] chain method
 
 
 ## Helpers
