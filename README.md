@@ -6,7 +6,9 @@ OpenBox
 > OpenBox - A collection of simple funcational tools for everyday programming use
 
 This project is currently a fun way for me to solidify my knowledge of
-functional programming in JS, testing and documentation writing.
+functional programming in JS, testing and documentation writing. That being
+said, it's limited feature set production ready and being used in
+[Proovi.io](http://proovi.io);
 
 It is based off the material from Brian Lonsdorf's excellent tutorial
 series on [egghead.io](https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript).
