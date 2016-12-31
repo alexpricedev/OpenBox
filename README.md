@@ -32,14 +32,29 @@ This project follows the [Fantasy Land spec](https://github.com/fantasyland/fant
   - [ ] Todo...
 
 
-### Install
-```sh
-$ yarn add open-box
+
+## Getting started
+
+First things first, install using your favorite package manager:
+`$ yarn add open-box` or `npm install --save open-box`
+
+### Usage
+
+```js
+
+// Import your container from OpenBox
+import { Box } from 'open-box';
+
+// Put something in a box
+const myBox = new Box(1);
+
+// Start applying functions to your values
+const newBox = myBox.map(x => x + 1);
+
 ```
 
 
-### Usage
-Todo...
+-----------------------------------------------------------
 
 
 ### Build
