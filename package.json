@@ -1,5 +1,5 @@
 {
-  "name": "OpenBox",
+  "name": "open-box",
   "version": "0.0.1",
   "description": "Simple Functional Javascript Tools",
   "main": "./index.js",
