@@ -1,10 +1,10 @@
 const OpenBox = require('../lib');
 const Box = OpenBox.Box;
 
-// ================ Example 1 =======================
+// ================ Example 1 ==========================
 // This is a good example of how using Box is useful.
-// It shows the different uses of `.map()`
-// ==================================================
+// It shows the different uses of `.map()` and `.fold()`
+// =====================================================
 
 /**
  * Finds the character of a Number in a String.
@@ -12,7 +12,7 @@ const Box = OpenBox.Box;
  * @return {String}
  */
 const nextCharForNumberString = str =>
-  Box(str)
+  new Box(str)
   .map(s => s.trim()) // method calls
   .map(r => parseInt(r)) // function operators
   .map(i => i + 1) // operators
@@ -35,7 +35,7 @@ console.log('-------------');
  * @return {Number}
  */
 const moneyToFloat = str =>
-  Box(str.replace(/\$/g, ''))
+  new Box(str.replace(/\$/g, ''))
   .map(r => parseFloat(r));
 
 /**
@@ -44,7 +44,7 @@ const moneyToFloat = str =>
  * @return {Number}
  */
 const percentToFloat = str =>
-  Box(str.replace(/\%/g, ''))
+  new Box(str.replace(/\%/g, ''))
   .map(r => parseFloat(r))
   .map(f => f * 0.01);
 
