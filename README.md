@@ -32,14 +32,24 @@ This project follows the [Fantasy Land spec](https://github.com/fantasyland/fant
   - [ ] Todo...
 
 
+### Install
+```sh
+$ yarn add open-box
+```
+
+
+### Usage
+Todo...
+
+
 ### Build
 ```sh
-yarn build-all
+$ yarn build-all
 ```
 
 ### Test
 ```sh
-yarn test
+$ yarn test
 ```
 
 
@@ -47,6 +57,7 @@ yarn test
 - Brian Lonsdorf ([@drboolean](https://twitter.com/drboolean))
 - Chet Harrison ([@chetharrison](https://twitter.com/chetharrison))
 - [ES6 Library Minimal](https://www.npmjs.org/package/es6-library-minimal) starter kit
+- [Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
 
 
 ## License
